@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import { Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom'; // Импортируем useNavigate
 
 const GuideView = ({description, price, img, id, title}) => {

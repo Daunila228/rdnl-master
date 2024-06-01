@@ -13,6 +13,9 @@ import store from './redux/store';
 import Detail from "./pages/detail";
 import GuidesData from './api/GuidesData';
 import GuidesDetails from './pages/GuidesDetails';
+import FormContacts from './pages/FormContacts';
+import HotelsData from './api/HotelsData'
+import HotelsDetails from './pages/HotelsDetails'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -27,6 +30,9 @@ root.render(
                     <Route path='/detail/:id' element={<Detail/>}/>
                     <Route path='/guides' element={<GuidesData/>}/>
                     <Route path='/guide/:id' element={<GuidesDetails/>}/>
+                    <Route path='/form' element={<FormContacts/>}/>
+                    <Route path='/hotels' element={<HotelsData/>}/>
+                    <Route path='/hotels/:id' element={<HotelsDetails/>}/>
                     
                 </Routes>
             </Router>
