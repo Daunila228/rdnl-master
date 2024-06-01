@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.boxShadow {
+	-webkit-box-shadow: 0px 0px 12px -7px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 12px -7px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 12px -7px rgba(0, 0, 0, 0.75);
+}
+
+._container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.Modal {
+	position: fixed;
+	border-radius: 16px;
+	z-index: 1000;
+	left: 50%;
+	top: 50%;
+	background-color: #fff;
+	width: 700px;
+	height: 500px;
+	transform: translate(-50%, -50%);
+}
+
+.footerLink {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	color: grey;
+	transition: .3s ease;
+	cursor: pointer;
+}
+
+.footerLink:hover {
+	transition: .3s ease;
+	color: #fff;
+}
+
+/* Card component */
+.Card {
+	border-radius: 16px;
+	overflow: hidden;
+	background-color: #ffffe3;
+	min-width: 300px;
+	margin-bottom: 24px;
+	cursor: pointer;
+	opacity: .9;
+	transition: .3s ease;
+}
+
+.Card:hover {
+	opacity: 1;
+	transition: .3s ease;
+	scale: 1.01;
+}
+
+.Card > img {
+	height: 240px;
+	width: 100%;
+}
+
+.Card-description {
+	padding: 12px;
+}
+
+.Card-desc {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: calc(1.1em * 4);
+}
+
+.Card-title {
+	font-size: 18px;
+	margin-bottom: 8px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.containerCards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 18rem;
+}
+
+.cardsView {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 24px;
+}
