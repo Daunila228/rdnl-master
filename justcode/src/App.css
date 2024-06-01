@@ -42,12 +42,15 @@
 	transition: .3s ease;
 	color: #fff;
 }
+footer{
+	margin-top: 60px;
+}
 
 /* Card component */
 .Card {
 	border-radius: 16px;
 	overflow: hidden;
-	background-color: #ffffe3;
+	background-color: #f1e9e9;
 	min-width: 300px;
 	margin-bottom: 24px;
 	cursor: pointer;
@@ -73,10 +76,10 @@
 .Card-desc {
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 3;
+	-webkit-line-clamp: 4;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	height: calc(1.1em * 4);
+	height: calc(1.5em * 4);
 }
 
 .Card-title {
@@ -100,3 +103,10 @@
 	justify-content: space-between;
 	margin-top: 24px;
 }
+.GuidesView {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 24px;
+}
+

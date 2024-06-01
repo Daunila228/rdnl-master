@@ -2,7 +2,6 @@ import React from 'react';
 import Cards from "../components/Cards";
 import "../App.css"
 import {db} from "../db";
-
 const flights = [...db];
 
 const DataBase = () => {

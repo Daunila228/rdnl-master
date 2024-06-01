@@ -7,7 +7,6 @@ import {useSelector} from 'react-redux';
 
 
 function Header() {
-    const cartItems = useSelector(state => state.cart.cart)
     return (
         <div className="_container">
             <Navbar expand="lg" className="bg-body-tertiary navbar" style={{borderBottom: '1px solid black'}}>
@@ -18,6 +17,7 @@ function Header() {
                         <Nav style={{display: 'flex', alignItems: 'center', gap: '16px'}}>
                             <Nav.Link style={{whiteSpace: 'nowrap'}} href={'/'}>Главная</Nav.Link>
                             <Nav.Link style={{whiteSpace: 'nowrap'}} href={'/about'}>О нас</Nav.Link>
+                            <Nav.Link style={{whiteSpace: 'nowrap'}} href={'/guides'}>Гиды</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

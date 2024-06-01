@@ -11,6 +11,8 @@ import Contacts from './pages/Contacts';
 import {Provider} from 'react-redux'
 import store from './redux/store';
 import Detail from "./pages/detail";
+import GuidesData from './api/GuidesData';
+import GuidesDetails from './pages/GuidesDetails';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,6 +25,9 @@ root.render(
                     <Route path='/about' element={<About/>}/>
                     <Route path='/contacts' element={<Contacts/>}/>
                     <Route path='/detail/:id' element={<Detail/>}/>
+                    <Route path='/guides' element={<GuidesData/>}/>
+                    <Route path='/guide/:id' element={<GuidesDetails/>}/>
+                    
                 </Routes>
             </Router>
         </Provider>
